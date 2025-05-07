@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-   <title>Python HTML app</title>
+    <title>
+       Date and time
+    </title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-   <py-script>
-   from datetime import datetime
-  
-   print(f"It's now {datetime.now()}")
-   </py-script>
+    <div id="time">
+    </div>
+    <h1>
+        Hello
+    </h1>
+    <h3> あなたの名前はなんですか？ </h3>
+    
+    <script src="datefix.js"></script>
+    <input name="input" type="text" maxlength="16" id="searchTxt" class="searchField"/>
+    <button id="excutebutton">
+        クリック
+    </button>
+    <h3 id="output">?</h3>
+    <script src="interection.js"></script>
+
+
+
+    <h3> 5+3 = ? </h3>
+
+    <input name="input" type="text" maxlength="16" id="Atext1" class="searchField"/>
+    <button id="answer1">
+        クリック
+    </button>
+    <h3 id="Aout1">?</h3>
+    <script src="quiz.js"></script>
+
+
+
 </body>
-</html>

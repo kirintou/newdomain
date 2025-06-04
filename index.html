@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-       Date and time
-    </title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
+    <head>
+        <title>NewDomain</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 <body>
-    <div id="time">
-    </div>
-    <h1>
-        Hello
-    </h1>
-    <h3> あなたの名前はなんですか？ </h3>
-    
-    <script src="datefix.js"></script>
-    <input name="input" type="text" maxlength="16" id="searchTxt" class="searchField"/>
-    <button id="excutebutton">
-        クリック
-    </button>
-    <h3 id="output">?</h3>
-    <script src="interection.js"></script>
+    <div id="time"></div><script src="datefix.js"></script>
+    <h1>こんにちは。</h1>
+
+    <h3> 1.数の合成 </h3>
+    <p id="additionQ"></p>
+    <input name="input" type="number" value="0" min="1" max="60" id="additionA" class="searchField"/>
+    <button id="additionB">クリック</button>
+    <p id="additionR"></p>
+    <script src="addition.js"></script>
+
+    <h3> 2.(数の合成)の逆 </h3>
+    <p id="substractionQ"></p>
+    <input name="input" type="number" value="0" min="-60" max="60" id="substractionA" class="searchField"/>
+    <button id="substractionB">クリック</button>
+    <p id="substractionR"></p>
+    <script src="substraction.js"></script>
+
+    <h3> 3.複数回の(数の合成)を省略 </h3>
+    <p id="multiQ"></p>
+    <input name="input" type="number" value="0" min="-60" max="60" id="multiA" class="searchField"/>
+    <button id="multiB">クリック</button>
+    <p id="multiR"></p>
+    <script src="multi.js"></script>
+
+    <h3> 4.( 複数回の(数の合成)を省略 )の逆 </h3>
+    <p id="divisionQ"></p>
+    <input name="input" type="number" value="0" min="-60" max="60" id="divisionA" class="searchField"/>
+    <button id="divisionB">クリック</button>
+    <p id="divisionR"></p>
+    <script src="division.js"></script>
 
 
-
-    <h3> 5+3 = ? </h3>
-
-    <input name="input" type="text" maxlength="16" id="Atext1" class="searchField"/>
-    <button id="answer1">
-        クリック
-    </button>
-    <h3 id="Aout1">?</h3>
-    <script src="quiz.js"></script>
-
-
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
